@@ -14,22 +14,10 @@ class News extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-3 offset-md-2">
-                                <img src={t[1].urlToImage}></img>
-                                <h1>{t[1].title}</h1>
-                                <p>{t[1].description}</p>
-                                <h4>{t[1].author}</h4>
-                            </div>
-                            <div className="col-md-3 offset-md-2">
-                                <img src={t[2].urlToImage}></img>
-                                <h1>{t[2].title}</h1>
-                                <p>{t[2].description}</p>
-                                <h4>{t[2].author}</h4>
-                            </div>
-                            <div className="col-md-3 offset-md-2">
-                                <img src={t[3].urlToImage}></img>
-                                <h1>{t[3].title}</h1>
-                                <p>{t[3].description}</p>
-                                <h4>{t[3].author}</h4>
+                                <img src={res.urlToImage}></img>
+                                <h1>{res.title}</h1>
+                                <p>{res.description}</p>
+                                <h4>{res.author}</h4>
                             </div>
                         </div>
                     </div>
@@ -58,7 +46,28 @@ class News extends React.Component {
     render() {
         return (
             <div>
-                
+                   <div className="container">
+                        <div className="row">
+                            <div className="col-md-3 offset-md-2">
+                                <img src={tab[1].urlToImage}></img>
+                                <h1>{tab[1].title}</h1>
+                                <p>{tab[1].description}</p>
+                                <h4>{tab[1].author}</h4>
+                            </div>
+                            <div className="col-md-3 offset-md-2">
+                                <img src={tab[2].urlToImage}></img>
+                                <h1>{tab[2].title}</h1>
+                                <p>{tab[2].description}</p>
+                                <h4>{tab[2].author}</h4>
+                            </div>
+                            <div className="col-md-3 offset-md-2">
+                                <img src={tab[3].urlToImage}></img>
+                                <h1>{tab[3].title}</h1>
+                                <p>{tab[3].description}</p>
+                                <h4>{tab[3].author}</h4>
+                            </div>
+                        </div>
+                    </div>
             </div>
         );
     }
